@@ -3,15 +3,16 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 });
 
-// 顶部导航栏高度变化
-(function(){
+// 顶部导航栏高度变化(暴露全局)
+// (function(){
 	var $body=$('body');
 	var $navbarBrand=$('.navbar-reset,.navbar-reset .navbar-brand');
 	var $navbarIcon=$('#nav .icon-crown');
 	var $navbarToggle=$('.navbar-reset .navbar-toggle');
 	var $navbarALink=$('.navbar-reset .navbar-nav > li > a');
 
-	$(window).on('scroll',function(){
+	$(window).on('scroll',topBarHeight);
+	function topBarHeight(){
 		var scrollTop=$(document).scrollTop();
 		if(scrollTop>50){
 			// console.log(scrollTop);
@@ -27,8 +28,8 @@ $(function () {
 			$navbarToggle.css({'top':'15px'});
 			$navbarALink.css({'height':'80px','line-height':'80px'});
 		}
-	});
-})();
+	};
+// })();
 
 // news-loading
 // 
@@ -136,6 +137,8 @@ $(function () {
 		if(now!='waterfall' || now!='musicVideo'){
 			$(window).off('scroll');
 		}
+		// 重新启用顶部导航栏的动态
+		$(window).on('scroll',topBarHeight);
 
 		checkAddress();
 	});

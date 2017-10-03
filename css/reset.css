@@ -1,0 +1,136 @@
+/*bootstrap覆盖*/
+/*导航栏*/
+.navbar-reset {
+  background-color: #fff;
+  height: 80px;/*1*/
+  -webkit-box-shadow:2px 0 5px #ccc;
+          box-shadow: 2px 0 5px #ccc;
+  -webkit-transition: height .3s;
+  transition: height .3s;
+}
+/*logo*/
+.navbar-reset .navbar-brand {
+  color: #54577c;
+  height: 80px;/*2*/
+  padding: 0px 30px 20px 20px;
+  -webkit-transition: height .3s;
+  transition: height .3s;
+}
+/*字体图标-皇冠*/
+.navbar-reset .navbar-brand .crown{
+  position: relative;
+  bottom: 10px;
+}
+.navbar-reset .navbar-brand:hover,
+.navbar-reset .navbar-brand:focus {
+  color: #4a4162;
+  background-color: transparent;
+}
+.navbar-reset .navbar-text {
+  color: #777;
+}
+/*导航的项目-未点击*/
+.navbar-reset .navbar-nav > li > a {
+  color: #c6c5c6;
+  line-height: 80px;/*6*/
+  height: 80px;/*4*/
+  padding-top: 0;
+  padding-bottom: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.navbar-reset .navbar-nav > li > a:hover,
+.navbar-reset .navbar-nav > li > a:focus {
+  color: #54577c;
+  background-color: transparent;
+  border-bottom: 2px solid #54577c;
+}
+.navbar-reset .navbar-nav a:hover li,
+.navbar-reset .navbar-nav a:focus li {
+  border-bottom: 2px solid #54577c;
+  background-color: transparent;
+}
+.navbar-reset .navbar-nav > .active > a,
+.navbar-reset .navbar-nav > .active > a:hover,
+.navbar-reset .navbar-nav > .active > a:focus {
+  color: #54577c;
+  font-weight: bold;
+  background-color: transparent;
+  border-bottom: 2px solid #54577c;
+
+}
+.navbar-reset .navbar-nav > .disabled > a,
+.navbar-reset .navbar-nav > .disabled > a:hover,
+.navbar-reset .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+/*小屏幕的汉堡菜单*/
+.navbar-reset .navbar-toggle {
+  border-color: #ddd;
+  top: 15px;/*7*/
+  -webkit-transition: top .3s;
+  transition: top .3s;
+}
+.navbar-reset .navbar-toggle:hover,
+.navbar-reset .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-reset .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+/*汉堡菜单的面板*/
+.navbar-reset .navbar-collapse{
+
+  background-color: #fff;
+}
+.navbar-reset .navbar-collapse,
+.navbar-reset .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-reset .navbar-nav > .open > a,
+.navbar-reset .navbar-nav > .open > a:hover,
+.navbar-reset .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .navbar-reset .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-reset .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-reset .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-reset .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-reset .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-reset .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+  }
+  .navbar-reset .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-reset .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-reset .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-reset .navbar-link {
+  color: #777;
+}
+.navbar-reset .navbar-link:hover {
+  color: #333;
+}
+.navbar-reset .btn-link {
+  color: #777;
+}
+.navbar-reset .btn-link:hover,
+.navbar-reset .btn-link:focus {
+  color: #333;
+}
+.navbar-reset .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-reset .btn-link:hover,
+.navbar-reset .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-reset .btn-link:focus {
+  color: #ccc;
+}

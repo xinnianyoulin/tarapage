@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>T-ara</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/leaveMessage.css">
+  <link rel="stylesheet" href="css/member.css">
+  <link rel="stylesheet" href="css/musicVideo.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/waterfall.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <script src="https://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="https://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<!-- 导航菜单部分(共有) -->
+	<header id="nav">
+		<nav class="navbar navbar-reset reset-margin-b navbar-fixed-top">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand reset-padding" data-toggle="tooltip" data-placement="bottom" title="百度-T-ara组合吧" href="http://www.tarabar.cn" target="_blank">
+						<i class="icon-crown"></i>
+						<span class="crown">皇冠团</span>
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#Home" data-local="Home">首页<span class="sr-only">(current)</span></a></li>
+						<li><a href="#member" data-local="member">成员介绍</a></li>
+						<li><a href="#musicVideo" data-local="musicVideo">音乐作品</a></li>
+						<li><a href="#waterfall" data-local="waterfall">照片墙</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#leaveMessage" data-local="leaveMessage">留言板</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</header>
+	<!-- 导航菜单部分结束 -->
+
+	<!-- addMoreInfo in this -->
+	<div id="content"></div>
+
+	<!-- 音乐插件(共有) -->
+	<div class="music-wrap">
+		<div id='music' hidden>
+			<audio src="" autoplay preload loop></audio>
+			<!-- 播放暂停按钮 -->
+			<div class="music-button">
+				<i class="icon-play"></i>
+			</div>
+			<!-- 进度条 -->
+			<div class="music-progress-wrap">
+				<div class="music-progress">
+					<div class="music-progress-cur"></div>
+				</div>
+			</div>
+			<!-- 进度条目前时间及总时间 -->
+			<div class="music-allTime">00:00</div>
+			<div class="music-curTime">00:00</div>
+			<!-- 歌名显示 -->
+			<div class="music-name"></div>
+			<!-- 音量控制 -->
+			<div class="music-volume">
+				<i class="icon-volume-medium"></i>
+			</div>
+		</div>
+		<span class="musicSwitch">
+			<i class="icon-music"></i>
+		</span>
+		<!-- 点击播放列表飞入的icon -->
+		<i class="icon-music" id="moveMusicIcon"></i>
+	</div>
+	<!-- footer(共有) -->
+	<footer class="footer">
+		<div class="container">
+			<p class="pull-left">Copyright @2017 Design by youlin</p>
+			<a href="mailto:734435946@qq.com?subject=关于T-ara皇冠团站的建议" class="icon-envelop pull-right" data-toggle="tooltip" data-placement="top" title="有什么建议，发送邮件给我噢~"></a>
+		</div>
+	</footer>
+	<script src="js/script.js"></script>
+	<script src="js/music.js"></script>
+</body>
+</html>

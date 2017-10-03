@@ -1,0 +1,45 @@
+/*背景图*/
+body{
+	// background:url(../image/bgI-waterfall.jpg) repeat;
+	background-attachment:fixed;
+	background-size: cover;
+}
+#main_body{
+	position:relative;
+	display:block;
+	z-index:1;
+}
+/*图片大容器-贴在一起*/
+.box{
+	padding:15px 0 0 15px;
+	float:left;
+}
+/*图片容器-边框*/
+.pic{
+	background-color:#fff;
+	border:1px solid #ccc;
+	border-radius:5px;
+	-webkit-box-shadow:0 0 5px #ccc;
+	        box-shadow:0 0 5px #ccc;
+	padding:10px;
+}
+/*图片*/
+.pic img{
+	display:block;
+	width:250px;
+	-webkit-transform: scale(1.0);
+	        transform: scale(1.0);
+	-webkit-transition:all 0.4s;
+	transition:all 0.4s;
+}
+/*放大动画*/
+.pic img:hover{
+	position:relative;
+	-webkit-transform: scale(1.4);
+	        transform: scale(1.4);
+	z-index:10;
+	border:3px solid #fff;
+	border-radius:5px;
+	-webkit-box-shadow:0 0 5px #fff;
+	        box-shadow:0 0 5px #fff;
+}

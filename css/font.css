@@ -1,0 +1,99 @@
+/*字体图标*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?aepcvr');
+  src:  url('../fonts/icomoon.eot?aepcvr#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?aepcvr') format('truetype'),
+    url('../fonts/icomoon.woff?aepcvr') format('woff'),
+    url('../fonts/icomoon.svg?aepcvr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*皇冠*/
+.icon-crown:before {
+  content: "\e900";
+}
+/*羽毛笔*/
+.icon-quill:before {
+  content: "\e907";
+}
+/*音符*/
+.icon-music:before {
+  content: "\e911";
+}
+/*信封*/
+.icon-envelop:before {
+  content: "\e945";
+}
+/*加载圆形*/
+.icon-spinner6:before {
+  content: "\e97f";
+}
+/*搜索*/
+.icon-search:before {
+  content: "\e986";
+}
+/*全屏*/
+.icon-enlarge:before {
+  content: "\e98b";
+}
+/*删除：垃圾桶*/
+.icon-bin:before {
+  content: "\e9ac";
+}
+/*三杆菜单*/
+.icon-list:before {
+  content: "\e9ba";
+}
+/*提示信息感叹号*/
+.icon-notification:before {
+  content: "\ea08";
+}
+/*提示信息 i*/
+.icon-info:before {
+  content: "\ea0c";
+}
+/*叉叉：关闭*/
+.icon-cross:before {
+  content: "\ea0f";
+}
+/*三角形：点击播放*/
+.icon-play:before {
+  content: "\ea1c";
+}
+/*双杆：点击暂停*/
+.icon-pause:before {
+  content: "\ea1d";
+}
+/*未静音*/
+.icon-volume-medium:before {
+  content: "\ea27";
+}
+/*静音*/
+.icon-volume-mute:before {
+  content: "\ea2a";
+}
+/*圆箭头上*/
+.icon-circle-up:before {
+  content: "\ea41";
+}
+/*圆箭头下*/
+.icon-circle-down:before {
+  content: "\ea43";
+}

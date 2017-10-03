@@ -1,0 +1,82 @@
+/*恩静 宝蓝 孝敏 素妍 居丽 智妍-为队长担任序列*/
+/*去除margin*/
+p{
+	margin: 0;
+}
+/*成员介绍公共样式*/
+.page{
+	background-color: #f5f5f5;
+	border: 1px solid #54577c;
+	background-size: cover;
+	margin-top:50px;
+	padding: 20px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-box-shadow: 1px 1px 10px #ccc;
+	        box-shadow: 1px 1px 10px #ccc;
+}
+/*成员img*/
+.page .member-img{
+	/*width: 100%;*/
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	        box-shadow: 0 0 5px #ccc;
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+.page img{
+	width: 100%;
+	
+}
+/*介绍信息容器-ul*/
+.page .member-info{
+	-webkit-box-shadow: 0 0 5px #ccc;
+	        box-shadow: 0 0 5px #ccc;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	padding: 10px 20px;
+}
+/*每个信息容器-li*/
+.page .member-info .info-item{
+	line-height: 50px;
+	border-bottom: 1px solid #ccc;
+	height: 50px;
+	position: relative;
+	overflow: hidden;
+	/*-webkit-transition: height .3s;
+	transition: height .3s;*/
+}
+/*信息描述-中文名*/
+.page .member-info .info-item .desc{
+	display: inline-block;
+	padding: 0 20px 0 0;
+	color: #666;
+	font-size: 14px;
+}
+/*信息内容-朴智妍*/
+.page .member-info .info-item .info{
+	display: inline-block;
+	color: #333;
+	font-size: 13px;
+	position: absolute;
+	left: 90px;
+	padding-right: 20px;
+}
+/*内容溢出展开的icon-圆箭头*/
+.page .member-info .info-item i{
+	position: absolute;
+	right: 5px;
+	bottom: 18px;
+	color: #666;
+	font-size: 15px;
+	cursor: pointer;
+}
+/*展开内容的样式*/
+.openInfo{
+	border:1px solid #ccc;
+	border-top: 0;
+	-webkit-box-shadow:0 0 10px #ccc;
+	        box-shadow:0 0 10px #ccc;
+}

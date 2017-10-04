@@ -24,32 +24,29 @@
 					// id: 1832/03/22 15:15#1564648946131#留言者
 					// log:留言内容
 					
-					var str='';
-
-
 					for (var i = 0; i < rs.rows.length; i++) {
 						var num=Math.ceil(Math.random()*7);
 						// console.log(num);
+						var str='';
 
-						str+='<div class="media" data-time="'+rs.rows.item(i).id+'">';
-							str+='<div class="media-left">';
-								str+='<a href="#">';
-									str+='<img class="media-object" src="images/nickPic'+num+'.jpg" alt="...">';
-								str+='</a>';
-							str+='</div>';
-							str+='<div class="media-body">';
-								str+='<h4 class="media-heading">';
-									str+='<p class="leaveName">'+rs.rows.item(i).id.split('#')[2]+'</p>';
-									str+='<span class="leaveTime">'+rs.rows.item(i).id.split('#')[0]+'</span>';
-								str+='</h4>';
-								str+='<div class="leaveInfo">'+rs.rows.item(i).log+'</div>';
-							str+='</div>';
-							str+='<i class="icon-bin"></i>';
+						str+='<div class="media-left">';
+							str+='<a href="#">';
+								str+='<img class="media-object" src="images/nickPic'+num+'.jpg" alt="...">';
+							str+='</a>';
 						str+='</div>';
+						str+='<div class="media-body">';
+							str+='<h4 class="media-heading">';
+								str+='<p class="leaveName">'+rs.rows.item(i).id.split('#')[2]+'</p>';
+								str+='<span class="leaveTime">'+rs.rows.item(i).id.split('#')[0]+'</span>';
+							str+='</h4>';
+							str+='<div class="leaveInfo">'+rs.rows.item(i).log+'</div>';
+						str+='</div>';
+						str+='<i class="icon-bin"></i>';
+
+					$('<div class="media" data-time="'+rs.rows.item(i).id+'"></div>').html(str).appendTo($('#'+selectorId));
+					
 					}
 					// console.log(str);
-						
-					$('#'+selectorId).html(str);
 				})
 			})
 		},
@@ -119,7 +116,7 @@
 				// 中文开头，允许字母数字下划线中文，2-13个字符
 				var reg=/^[\u4e00-\u9fa5][a-zA-Z0-9_\u4e00-\u9fa5]{1,9}$/;
 
-				console.log(reg.test(name));
+				// console.log(reg.test(name));
 				// 格式不正确，增加感叹号提示
 				if(!reg.test(name)){
 					self.config.tipIcon.fadeIn();
@@ -138,7 +135,7 @@
 				var time=self.getTime();
 				var str=time+'#'+name;
 				
-				console.log(time);
+				// console.log(time);
 				self.dataBase.setData(str,details);
 				self.dataBase.getData('messageList');
 				self.config.leaveName.val('');
@@ -160,7 +157,7 @@
 			var minute=this.checkNum(date.getMinutes());
 			var str='';
 			str=year+'/'+month+'/'+day+' '+hour+':'+minute+'#'+date.getTime();
-			console.log(str);
+			// console.log(str);
 			return str;
 		},
 		checkNum:function(i){

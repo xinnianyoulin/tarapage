@@ -1,62 +1,68 @@
 
-	<!-- 留言 -->	
-	<section id='leaveMessage'>
-		<div class="container-fluid reset-padding">
-			<div class="banner-liuyan"></div>
-			<!-- <span class="contact-title">联系我</span> -->
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<!-- <div class="banner-liuyan"></div> -->
-					<span class="header-title">联系我</span>
-					<h3>留言信息</h3>
-					<div id="messageList">
-						<!-- 默认留言 -->
-						<div class="media">
-							<div class="media-left">
-								<a href="#">
-								<img class="media-object" src="images/nickPic2.jpg" alt="...">
-								</a>
-							</div>
-							<div class="media-body">
-								<h4 class="media-heading">
-									<p class="leaveName">张晓东</p>
-									<span class="leaveTime">2017/09/09 14:14</span>
-								</h4>
-								<div class="leaveInfo">请相信，那些偷偷溜走的时光，催老了我们的容颜，却丰盈了我们的人生~</div>
-							</div>
-							<i class="icon-bin"></i>
+<!-- 留言 -->	
+<section id='leaveMessage'>
+	<div class="container-fluid reset-padding">
+		<div class="banner-liuyan"></div>
+		<!-- <span class="contact-title">联系我</span> -->
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- <div class="banner-liuyan"></div> -->
+				<span class="header-title">联系我</span>
+				<h3>留言信息</h3>
+				<div id="messageList">
+					<!-- 默认留言 -->
+					<div class="media">
+						<div class="media-left">
+							<a href="javascript:;">
+							<img class="media-object" src="images/nickPic2.jpg" alt="...">
+							</a>
 						</div>
-						<div class="media">
-							<div class="media-left">
-								<a href="#">
-								<img class="media-object" src="images/nickPic3.jpg" alt="...">
-								</a>
-							</div>
-							<div class="media-body">
-								<h4 class="media-heading">
-									<p class="leaveName">王小西</p>
-									<span class="leaveTime">2017/09/09 14:30</span>
-								</h4>
-								<div class="leaveInfo">世间最美的艳遇，是遇到另一个自己~</div>
-							</div>
-							<i class="icon-bin"></i>
+						<div class="media-body">
+							<h4 class="media-heading">
+								<p class="leaveName">张晓东</p>
+								<span class="leaveTime">2017/09/09 14:14</span>
+							</h4>
+							<div class="leaveInfo">请相信，那些偷偷溜走的时光，催老了我们的容颜，却丰盈了我们的人生~</div>
 						</div>
+						<i class="icon-bin"></i>
 					</div>
-				</div>
-
-				<div class="col-md-12">
-					<h3>留言</h3>
-					<div class="leavePanel">
-						<input type="text" id="name" placeholder="称谓">
-						<i class="icon-info" data-toggle="tooltip" data-placement="right" title="请输入以中文开头，可包含字母数字下划线的2~10个字符~" hidden></i>
-						<textarea id="info" cols="30" rows="8" placeholder="请输入留言..."></textarea>
-						<p class="tip" hidden>留言为空不太好噢~先写点东西再提交吧~</p>
-						<button id="submit-info">留下脚印</button>
+					<div class="media">
+						<div class="media-left">
+							<a href="javascript:;">
+							<img class="media-object" src="images/nickPic3.jpg" alt="...">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">
+								<p class="leaveName">王小西</p>
+								<span class="leaveTime">2017/09/09 14:30</span>
+							</h4>
+							<div class="leaveInfo">世间最美的艳遇，是遇到另一个自己~</div>
+						</div>
+						<i class="icon-bin"></i>
 					</div>
 				</div>
 			</div>
+
+			<div class="col-md-12">
+				<h3>留言</h3>
+				<div class="leavePanel">
+					<input type="text" id="name" placeholder="称谓">
+					<i class="icon-info" data-toggle="tooltip" data-placement="right" title="请输入以中文开头，可包含字母数字下划线的2~10个字符~" hidden></i>
+					<textarea id="info" cols="30" rows="8" placeholder="请输入留言..."></textarea>
+					<p class="tip" hidden>留言为空不太好噢~先写点东西再提交吧~</p>
+					<button id="submit-info">留下脚印</button>
+				</div>
+			</div>
 		</div>
-	</section>
-	<script src="js/leavemessage.js"></script>
+	</div>
+</section>
+<script src="js/leavemessage.js"></script>
+<script>
+	// 重新加载tooltip工具
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip();
+	});
+</script>

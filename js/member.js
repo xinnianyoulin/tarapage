@@ -49,7 +49,7 @@ getInfo('含恩静',6);
 // showMoreInfo();
 setTimeout(function(){
 	showMoreInfo();
-},300)
+},1000)
 
 // $.when(
 // 	getInfo('朴智妍',1),
@@ -99,7 +99,7 @@ function getInfo(name,pageNum){
 		},
 		error:function(){
 			// return '出错啦~';
-			// console.log('wrong');
+			console.log('wrong');
 		}
 	})
 }

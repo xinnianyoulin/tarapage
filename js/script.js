@@ -147,6 +147,7 @@
  		}
  		// 重新启用顶部导航栏的动态
  		$(window).on('scroll',topBarHeight);
+ 		// 默认新页面顶部开始
  		$(window).scrollTop(0);
  		checkAddress();
  	});

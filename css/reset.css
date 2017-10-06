@@ -71,9 +71,10 @@
   top: 15px;/*7*/
   -webkit-transition: top .3s;
   transition: top .3s;
+  border-radius: 0;
 }
-.navbar-reset .navbar-toggle:hover,
-.navbar-reset .navbar-toggle:focus {
+/*.navbar-reset .navbar-toggle:hover,*/
+.navbar-reset .navbar-toggle:active {
   background-color: #ddd;
 }
 .navbar-reset .navbar-toggle .icon-bar {

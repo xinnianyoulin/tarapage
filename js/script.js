@@ -92,7 +92,6 @@
 	}
 
 	// loadingMoreNewsBtnEvent
-	var $loading=$('.loading-more');
  	$content.on('click','.loading-more',function(){
  		// console.log($(this));
  		$(this).html('');
@@ -100,11 +99,12 @@
  			'background-image': 'url(images/loadingMore.gif)',
 			'background-color': 'rgb(252,210,88)',
  		});
+ 		var self=this;
  		setTimeout(function(){
  			curPage++;
  			getNewsList(curPage);
- 			$loading.html('点击加载更多内容');
- 			$loading.css({
+ 			$(self).html('点击加载更多内容');
+ 			$(self).css({
  			'background-image': '',
 			'background-color': '',
  		});
